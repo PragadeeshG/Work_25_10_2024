@@ -1,0 +1,15 @@
+create table if not exists aes_encryptor(
+encryption_method varchar(255) not null,
+aes_modes varchar(255) null,
+recommended_mode char null,
+electronic_book_code Integer null,
+cipher_block_chaining varchar(255) null,
+cipher_feedback varchar(255) null,
+output_feedback Integer null,
+counter Integer null,
+counter_mode varchar(255) null,
+galios_mode Integer null,
+cipher_size varchar(255) null,
+aes_params varchar(255) null,
+input_data varchar(255) null,
+constraint aes_encryptor_pk primary key(encryption_method));
